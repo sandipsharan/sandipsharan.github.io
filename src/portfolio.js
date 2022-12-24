@@ -6,14 +6,14 @@ const header = {
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
+  name: 'Sandip Sharan Senthil Kumar',
+  role: 'Aspiring Robotics Engineer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+    'A meticulous and organized individual seeking an Internship position in the field of Robotics, willing to transform into a professional from a fresher as fast as possible by applying the best of my technical knowledge and skills.',
   resume: 'https://example.com',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/sandip26/',
+    github: 'https://github.com/sandipsharan',
   },
 }
 
