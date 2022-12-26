@@ -1,13 +1,11 @@
-# Cleanfolio Minimal
+# How to view my Portfolio
 
-A clean and simple portfolio template built with plain HTML, CSS and JavaScript.
+To check out my portfolio click the link given below
 
-## Preview
+[Click Here](https://sandipsharan.github.io/)
 
-[![imgur](https://i.imgur.com/5z7cvMz.gif)](https://rajshekhar26.github.io/cleanfolio-minimal)
+# To use this template
 
-[See Live](https://rajshekhar26.github.io/cleanfolio-minimal)
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+Download all the files as a zip or clone it to your local desktop using Git Desktop
+<br>
+You can edit the index.html file for major changes and the style.scss file for changes in each classes
