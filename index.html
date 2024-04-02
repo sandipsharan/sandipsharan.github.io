@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sandip Sharan Senthil Kumar</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://sandipsharan.github.io/" class="link"
+          >SS.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I'm <span class="about__name">Sandip Sharan Senthil Kumar</span></h1>
+        <h2 class="about__role">A Graduate Student Looking for Full-time opportunities in Robotics</h2>
+        <p class="about__desc">
+          Currently pursuing Master's in Robotics Engineering at University of Maryland-College Park. A meticulous and organized individual seeking full-time opportunities in the field of Robotics focusing on Machine learning and Computer Vision, 
+          willing to transform into a professional from a fresher as fast as possible by applying the best of my technical knowledge and skills
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://drive.google.com/file/d/1hzPg6f7Haja1A9g4kLUDJuBzsiRPEM19/view?usp=sharing">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/sandipsharan"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/sandip26"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+
+          <div class="project">
+            <h3>3D Inspection using NerF</h3>
+            <p class="project__description">
+              Developed an innovative 3D inspection framework 
+            </p>
+            <p class="project__description">
+              Integrated modified HF-NeuS and DeepCrack
+            </p>
+            <p class="project__description">
+              Layed the groundwork for precise 3D crack inspection
+            </p>
+            <a
+              href="https://github.com/sandipsharan/Underwater-Image-Restoration"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div> 
+
+          <div class="project">
+            <h3>Underwater Image Restoration</h3>
+            <p class="project__description">
+              Built a DNN model for getting the depth map of the input image 
+            </p>
+            <p class="project__description">
+              Pre-processed the depth map and estimated the illuminant map, and the wideband attenuation coefficient
+            </p>
+            <p class="project__description">
+              Restored the image using the estimated attenuation coefficient value
+            </p>
+            <a
+              href="https://github.com/sandipsharan/Underwater-Image-Restoration"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>  
+
+          <div class="project">
+            <h3>Gesture-Based Virtual Car Driving System</h3>
+            <p class="project__description">
+              Used Google's Media Pipe model to extract hand’s key points and estimate the angle between them  
+            </p>
+            <p class="project__description">
+              Trained a Feed Forward Neural Network (FFNN) with a custom dataset to classify gestures 
+            </p>
+            <p class="project__description">
+              Implemented the live Gesture control for Turtlebot using Gazebo, ROS
+            </p>
+            <a
+              href="https://github.com/sandipsharan/Virtual-Car-Driving-System"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Weighted A-star algorithm for Turtle Bot using ROS2</h3>
+            <p class="project__description">
+              Implemented A* algorithm for path planning of a TurtleBot in a custom map containing random obstacles  
+            </p>
+            <p class="project__description">
+              Utilized the ROS2 framework to simulate the robot's movement within the obstacle space 
+            </p>
+            <p class="project__description">
+              Successfully integrated the A* algorithm with the ROS2 simulation and visualized them in Gazebo
+            </p>
+            <a
+              href="https://github.com/sandipsharan/A-star-algorithm-for-turtlebot"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+
+          <div class="project">
+            <h3>Martian Rover</h3>
+            <p class="project__description">
+              Designed and Simulated Martian Rover using Solidworks and Gazebo.
+            </p>
+            <p class="project__description">
+              Formulated Kinematics and Dynamics for each links of the rover and the robotic arm
+            </p>
+            <p class="project__description">
+              Controlled the rover using ROS in a simulated gazebo environment similar to the Martian world
+            </p>
+            <a
+              href="https://github.com/sandipsharan/Martian-Rover"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            
+          </div>
+          <div class="project">
+            <h3>Maze Robot</h3>
+            <p class="project__description">
+              Implemented wall-following algorithm in the robot for solving the maze in C++
+            </p>
+            <p class="project__description">
+              Robot's Work: Detect the walls, Setting the walls, Change the color of the cell after passing, and halt when it reaches the goal
+            </p>
+            <p class="project__description">
+              Implemented the algorithm for the robot to return back to its original position
+            </p>
+            <a
+              href="https://github.com/sandipsharan/Maze-Robot"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>LQR and LQG Controller</h3>
+            <p class="project__description">
+              Implemented the LQR and LQG Controller for a frictionless cart with masses attached to it
+            </p>
+            <p class="project__description">
+              Calculated the equations of motion for system 
+            </p>
+            <p class="project__description">
+              Implemented the controllers for both non-linear and linearized system and simulating the response for initial condition and step input
+            </p>
+            <a
+              href="https://github.com/sandipsharan/LQR-LQG-Controller"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Multi-Purpose Rover</h3>
+            <p class="project__description">
+              Designed and developed a Multi-Purpose Rover which can be used in different fields just by changing the end-effector.
+            </p>
+            <p class="project__description">
+              Usage Areas:
+            </p>
+            <p class="project__description">
+              x Floor Sanitization- Medical
+            </p>
+            <p class="project__description">
+              x Landmine Detection - Military
+            </p>
+            <p class="project__description">
+              x Soil collection - Space Exploration
+            </p>
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Technical-Report</h3>
+            <p class="project__description">
+              Reimplemented Coordinated Manipulator/Spacecraft Motion Control For Space Robotic Systems by Evangelos Papadopoulos Steven Dubowsky
+            </p>
+            <p class="project__description">
+              Simulated the example given in the paper using MATLAB Simulink
+            </p>
+            <a
+              href="https://github.com/sandipsharan/Technical-Report"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+          
+
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">ROS1 and ROS2</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">C#</li>
+          <li class="skills__list-item btn btn--plain">MATLAB</li>
+          <li class="skills__list-item btn btn--plain">PyTorch3D</li>
+          <li class="skills__list-item btn btn--plain">PyTorch</li>
+          <li class="skills__list-item btn btn--plain">TensorFlow</li>
+          <li class="skills__list-item btn btn--plain">OpenCV</li>
+          <li class="skills__list-item btn btn--plain">Gazebo</li>
+          <li class="skills__list-item btn btn--plain">RViz</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Scikit</li>
+          <li class="skills__list-item btn btn--plain">Solidworks</li>
+          <li class="skills__list-item btn btn--plain">AutoCAD</li>
+          <li class="skills__list-item btn btn--plain">Unity</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Linux</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:sandipsharanskumar@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://sandipsharan.github.io/"
+        class="link footer__link"
+      >
+        Created By Sandip Sharan Senthil Kumar
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
