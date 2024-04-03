@@ -26,54 +26,64 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPython />
+        <SiPython title="Python"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiCplusplus />
+        <SiCplusplus title="C++"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiCsharp />
+        <SiCsharp title="C Sharp"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={MatlabIcon} alt="Matlab" style={{ width: '1.75em', height: '1.75em' }} />
+        <div title="Matlab">
+          <img src={MatlabIcon} alt="Matlab" style={{ width: '1.75em', height: '1.75em' }} />
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiOpencv />
+        <SiOpencv title="OpenCV"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiTensorflow />
+        <SiTensorflow title="TensorFlow"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
+        <SiPytorch title="PyTorch"/>
       </Col><Col xs={4} md={2} className="tech-icons">
-        <SiRos />
+        <SiRos title="ROS"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiUnity />
+        <SiUnity title="Unity"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+      <div title="SUMO">
         <img src={SumoIcon} alt="Sumo" style={{ width: '1.25em', height: '1em' }} />
+      </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+      <div title="RoadRunner">
         <img src={RoadRunnerIcon} alt="RoadRunner" style={{ width: '1em', height: '1em' }} />
+      </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+      <div title="Gazebo">
         <img src={GazeboIcon} alt="Gazebo" style={{ width: '1.75em', height: '1.75em' }} />
+      </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+      <div title="Solidworks">
         <img src={SolidWorksIcon} alt="Solidworks" style={{ width: '1.05em', height: '1.05em' }} />
+      </div>  
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNumpy />
+        <SiNumpy title="NumPy"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiScikitlearn />
+        <SiScikitlearn title="Scikit-Learn"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiScipy />
+        <SiScipy title="SciPy"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPandas />
+        <SiPandas title="Pandas"/>
       </Col>  
     </Row>
   );

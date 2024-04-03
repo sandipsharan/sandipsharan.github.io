@@ -18,34 +18,34 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiWindows />
+        <SiWindows title="Windows"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
+        <SiLinux title="Linux"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDocker />
+        <SiDocker title="Docker"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAnaconda />
+        <SiAnaconda title="Anaconda"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <SiVisualstudiocode title="VS Code"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGooglecolab />
+        <SiGooglecolab title="G-Colab"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPycharm />
+        <SiPycharm title="PyCharm"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGithub />
+        <SiGithub title="GitHub"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGit />
+        <SiGit title="Git"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <SiSlack title="Slack"/>
       </Col>
     </Row>
   );
