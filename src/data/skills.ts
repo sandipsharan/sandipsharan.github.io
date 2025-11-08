@@ -1,12 +1,12 @@
-export interface News {
+export interface Skill {
   date: string;
   title: string;
   description: string;
   link?: string;
 }
 
-export const newsData: News[] = [
-  // If you don't want to show news, just make the array empty.
+export const skillsData: Skill[] = [
+  // If you don't want to show skills, just make the array empty.
   /*{
     date: "March 2024",
     title: "Paper accepted at ICML 2024",

@@ -4,8 +4,8 @@ import { PublicationEntry } from "@/components/publication-entry";
 import { publicationData } from "@/data/publication";
 import { ProfileSection } from "@/components/profile-section";
 import { aboutMe } from "@/data/aboutme";
-import { NewsEntry } from "@/components/skills-entry";
-import { newsData } from "@/data/skills";
+import { SkillEntry } from "@/components/skills-entry";
+import { skillsData } from "@/data/skills";
 import { ExperienceEntry } from "@/components/experience-entry";
 import { experienceData } from "@/data/experience";
 import { ProjectsEntry } from "@/components/projects-entry";
@@ -43,17 +43,17 @@ export default function Home() {
             {sectionOrder.map((sectionName) => {
               // Most of this is redundant... but in case it needs to be unique.
               switch (sectionName) {
-                case Section.News:
+                case Section.Skills:
                   return (
-                    newsData.length > 0 && (
+                    skillsData.length > 0 && (
                       <section key={sectionName}>
                         <h2 className="font-serif text-l mb-12 tracking-wide uppercase">
-                          News
+                          Skills
                         </h2>
                         <div className="space-y-12">
-                          {newsData.map((news, index) => (
+                          {skillsData.map((skill, index) => (
                             <div key={index}>
-                              <NewsEntry news={news} />
+                              <SkillEntry skill={skill} />
                             </div>
                           ))}
                         </div>
