@@ -16,7 +16,7 @@ export const publicationData: Publication[] = [
     conference: "AIAA SciTech",
     title: "Enabling Autonomous Navigation with Radar-Only Perception in GPS-Denied Environments",
     authors: "Sandip Sharan Senthil Kumar, et al.",
-    paperUrl: "https://arxiv.org/abs/2502.00050",
+    paperUrl: "https://arc.aiaa.org/doi/10.2514/6.2026-1070",
     tldr: "Developed a radar-only perception framework for robust autonomous navigation in GPS-denied environments, leveraging machine learning-based calibration and sensor fusion techniques.",
     imageUrl:
       "/scitech.png",

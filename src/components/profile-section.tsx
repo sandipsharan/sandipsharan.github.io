@@ -28,7 +28,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
               alt={aboutMe.nameText}
               fill
               priority
-              className="object-cover rounded-xl"
+              className="object-cover rounded-xl border-2 border-black"
             />
           </div>
         </div>
