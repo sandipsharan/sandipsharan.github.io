@@ -82,8 +82,8 @@ export default function AboutPage() {
 
           <p className="body-text">
             Ultimately, I care about building autonomous systems that work
-            outside ideal conditions—low visibility, harsh environments, and
-            tight computational budgets—where reliability is not a feature, but
+            outside ideal conditions low visibility, harsh environments, and
+            tight computational budgets where reliability is not a feature, but
             the product itself.
           </p>
         </article>
