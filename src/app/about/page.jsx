@@ -33,7 +33,7 @@ export default function AboutPage() {
       <p className="section-kicker">About</p>
 
       <h1 className="page-title">
-        I&apos;m Sandip - crazy about building reliable AI for real-world autonomy.
+        I&apos;m Sandip - crazy about building reliable AI for real-world autonomy. 🔬
       </h1>
 
       <div className="info-grid">
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <p className="lead">
             My work focuses on delivering perception and navigation systems that remain
             dependable when sensing is sparse, noisy, or degraded, especially in
-            GPS-denied environments. 🔬
+            GPS-denied environments. 
           </p>
 
           <p className="body-text">

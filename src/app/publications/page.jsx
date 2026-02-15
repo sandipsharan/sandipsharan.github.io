@@ -6,9 +6,9 @@ export default function PublicationsPage() {
   return (
     <div className="page-stack">
       <p className="section-kicker">Publications</p>
-      <h1 className="page-title">Peer-reviewed Publications</h1>
+      <h1 className="page-title">Peer-reviewed Publications. 📚</h1>
       <p className="lead">
-        From Simulation to Real-world Applications in the field of Robotics and AI, in reverse chronological order. 📚
+        From Simulation to Real-world Applications in the field of Robotics and AI, in reverse chronological order. 
       </p>
 
       <div className="pub-grid">

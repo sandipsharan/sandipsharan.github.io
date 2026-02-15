@@ -4,10 +4,10 @@ export default function ContactPage() {
   return (
     <div className="page-stack">
       <p className="section-kicker">Contact</p>
-      <h1 className="page-title">Get In Touch</h1>
+      <h1 className="page-title">Get In Touch ✉️</h1>
       <article className="surface-card page-stack">
         <p className="lead">
-          Feel free to reach out, connect with me on LinkedIn or GitHub. I&apos;m always open to discussing new opportunities, collaborations, or just saying hi! ✉️
+          Feel free to reach out, connect with me on LinkedIn or GitHub. I&apos;m always open to discussing new opportunities, collaborations, or just saying hi! 
         </p>
         <a href={`mailto:${aboutMe.email}`} className="btn-main w-fit">
           {aboutMe.email}
