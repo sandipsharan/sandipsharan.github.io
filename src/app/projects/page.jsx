@@ -6,7 +6,7 @@ export default function ProjectsPage() {
   return (
     <div className="page-stack">
       <p className="section-kicker">Projects</p>
-      <h1 className="page-title">Stuff that I&apos;ve worked on over my career. 🛠️</h1>
+      <h1 className="page-title">Stuff, I&apos;ve worked on over my career. 🛠️</h1>
       <p className="lead">
         From path planning to computer vision, these projects showcase my journey in robotics and AI. 
       </p>
