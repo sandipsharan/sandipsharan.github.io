@@ -22,7 +22,7 @@ const Photo = ({ img, title, alt, idx }) => {
       onHoverStart={() => setIsVisible(true)}
       onHoverEnd={() => setIsVisible(false)}
       className={clsx(
-        "relative aspect-[16/9] w-[20rem] flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-[28rem] sm:rounded-2xl"
+        "relative aspect-[16/10] w-[20rem] flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-[28rem] sm:rounded-2xl"
       )}
     >
       <Image
