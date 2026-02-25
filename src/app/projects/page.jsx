@@ -16,7 +16,7 @@ export default function ProjectsPage() {
           <article key={`${project.title}-${index}`} className="surface-card page-stack">
             {project.imageUrl && (
               <div className="project-image-box">
-                <Image src={project.imageUrl} alt={project.title} fill className="object-cover" />
+                <Image src={project.imageUrl} alt={project.title} fill className="object-fill" />
               </div>
             )}
             <h2 className="section-title">{project.title}</h2>

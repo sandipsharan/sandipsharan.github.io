@@ -2,6 +2,7 @@
 
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -21,14 +22,14 @@ const Photo = ({ img, title, alt, idx }) => {
       onHoverStart={() => setIsVisible(true)}
       onHoverEnd={() => setIsVisible(false)}
       className={clsx(
-        "relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl"
+        "relative aspect-[16/9] w-[20rem] flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-[28rem] sm:rounded-2xl"
       )}
     >
       <Image
         src={img}
         alt={alt}
         sizes="(min-width: 640px) 18rem, 11rem"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-fill"
         placeholder="blur"
       />
       <AnimatePresence>
@@ -51,6 +52,12 @@ export const Photos = () => {
   const containerRef = useRef(null);
   const loopedPhotos = [...myPics, ...myPics, ...myPics];
 
+  const scrollPhotos = (direction) => {
+    const container = containerRef.current;
+    if (!container) return;
+    container.scrollBy({ left: direction * 320, behavior: "smooth" });
+  };
+
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -71,8 +78,26 @@ export const Photos = () => {
   }, []);
 
   return (
-    <div className="my-8">
-      <div ref={containerRef} className="hide-scrollbar -my-4 flex gap-8 overflow-x-auto py-4 px-8">
+    <div className="relative left-1/2 right-1/2 my-8 w-screen -translate-x-1/2">
+      <button
+        type="button"
+        aria-label="Scroll media highlights left"
+        onClick={() => scrollPhotos(-1)}
+        className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/35 p-2 text-white/90 backdrop-blur-sm transition hover:bg-black/50"
+      >
+        <ChevronLeft size={18} />
+      </button>
+
+      <button
+        type="button"
+        aria-label="Scroll media highlights right"
+        onClick={() => scrollPhotos(1)}
+        className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/35 p-2 text-white/90 backdrop-blur-sm transition hover:bg-black/50"
+      >
+        <ChevronRight size={18} />
+      </button>
+
+      <div ref={containerRef} className="hide-scrollbar -my-4 flex gap-6 overflow-x-auto py-4 px-4 sm:px-6">
         {loopedPhotos.map((myPic, index) => (
           <Photo
             key={`${myPic.img.src}-${index}`}

@@ -21,7 +21,7 @@ export default function PublicationsPage() {
             <div className="pub-layout">
               {publication.imageUrl && (
                 <div className="pub-image-box">
-                  <Image src={publication.imageUrl} alt={publication.title} fill className="object-cover" />
+                  <Image src={publication.imageUrl} alt={publication.title} fill className="object-fill" />
                 </div>
               )}
 
@@ -56,4 +56,3 @@ export default function PublicationsPage() {
     </div>
   );
 }
-

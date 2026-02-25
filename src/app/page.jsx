@@ -8,6 +8,8 @@ import { experienceData } from "@/data/experience";
 import { Photos } from "@/components/media/Photos";
 
 export default function HomePage() {
+  const featuredPublications = publicationData.filter((publication) => publication.featuredOnHome).slice(0, 4);
+
   return (
     <div className="page-stack">
       <section className="page-stack">
@@ -69,7 +71,7 @@ export default function HomePage() {
         <article className="surface-card page-stack">
           <h2 className="section-title">Publications</h2>
           <div className="simple-list">
-            {publicationData.slice(0, 5).map((publication, index) => (
+            {featuredPublications.map((publication, index) => (
               <div key={`${publication.title}-${index}`} className="list-item">
                 <p className="meta">{publication.year}</p>
                 <p className="work-role">{publication.title}</p>
@@ -87,7 +89,7 @@ export default function HomePage() {
             ))}
           </div>
           <Link href="/publications" className="btn-ghost w-fit">
-            View all research <ArrowUpRight size={14} />
+            See more <ArrowUpRight size={14} />
           </Link>
         </article>
 
@@ -132,4 +134,3 @@ export default function HomePage() {
     </div>
   );
 }
-
